@@ -1,0 +1,17 @@
+{
+  "name": "gist-collection-generator",
+  "version": "0.0.1",
+  "description": "生成纯静态 Gist 集合页",
+  "type": "module",
+  "bin": {
+    "gist-collect": "./cli.js"
+  },
+  "scripts": {
+    "build": "node cli.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "fs-extra": "^11.2.0",
+    "json-stringify-pretty-compact": "^4.0.0"
+  }
+}
