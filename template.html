@@ -291,7 +291,9 @@
         if (!username) return alert("无法获取用户名");
         setIsRefreshing(true); setRefreshSuccess(false);
         try {
-          const octokit = new Octokit();
+          const token = localStorage.getItem('GITHUB_TOKEN');
+          const octokit = new Octokit(token ? { auth: token } : {});
+          
           const res = await octokit.request('GET /users/{username}/gists', {
             username: username,
             per_page: 100
