@@ -1,6 +1,6 @@
 {
   "name": "gist-collection-generator",
-  "version": "0.0.1",
+  "private": true,
   "description": "生成纯静态 Gist 集合页",
   "type": "module",
   "bin": {
